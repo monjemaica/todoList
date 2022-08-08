@@ -1,0 +1,156 @@
+CRITICAL - 2022-08-07 19:38:17 --> syntax error, unexpected '}'
+in APPPATH\Models\Todos_Model.php on line 33.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\Todos_Model.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Todos_Model')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Todos_Model')
+ 4 [internal function]: spl_autoload_call('App\\Models\\Todos_Model')
+ 5 SYSTEMPATH\Config\Factories.php(152): class_exists('App\\Models\\Todos_Model')
+ 6 SYSTEMPATH\Config\Factories.php(122): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\Todos_Model')
+ 7 SYSTEMPATH\Config\Factories.php(83): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 8 SYSTEMPATH\Common.php(811): CodeIgniter\Config\Factories::models('App\\Models\\Todos_Model', [...], null)
+ 9 APPPATH\Controllers\Todolist.php(12): model('App\\Models\\Todos_Model')
+10 SYSTEMPATH\CodeIgniter.php(858): App\Controllers\Todolist->__construct()
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->createController()
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-07 19:38:27 --> syntax error, unexpected '}'
+in APPPATH\Models\Todos_Model.php on line 33.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\Todos_Model.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Todos_Model')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Todos_Model')
+ 4 [internal function]: spl_autoload_call('App\\Models\\Todos_Model')
+ 5 SYSTEMPATH\Config\Factories.php(152): class_exists('App\\Models\\Todos_Model')
+ 6 SYSTEMPATH\Config\Factories.php(122): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\Todos_Model')
+ 7 SYSTEMPATH\Config\Factories.php(83): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 8 SYSTEMPATH\Common.php(811): CodeIgniter\Config\Factories::models('App\\Models\\Todos_Model', [...], null)
+ 9 APPPATH\Controllers\Todolist.php(12): model('App\\Models\\Todos_Model')
+10 SYSTEMPATH\CodeIgniter.php(858): App\Controllers\Todolist->__construct()
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->createController()
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-07 19:43:13 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?)' at line 2
+CRITICAL - 2022-08-07 19:43:13 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?)' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO todos (title) 
+		VALUES (?)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO todos (title) 
+		VALUES (?)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO todos (title) 
+		VALUES (?)')
+ 4 APPPATH\Models\Todos_Model.php(34): CodeIgniter\Database\BaseConnection->query('INSERT INTO todos (title) 
+		VALUES (?)', [...])
+ 5 APPPATH\Controllers\Todolist.php(30): App\Models\Todos_Model->insertTodos([...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Todolist->insertTodos()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Todolist))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-07 19:49:27 --> Undefined index: title
+in APPPATH\Models\Todos_Model.php on line 32.
+ 1 APPPATH\Models\Todos_Model.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: title', 'APPPATH\\Models\\Todos_Model.php', 32, [...])
+ 2 APPPATH\Controllers\Todolist.php(30): App\Models\Todos_Model->insertTodos([...])
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Todolist->insertTodos()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Todolist))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-07 19:49:30 --> Undefined index: title
+in APPPATH\Models\Todos_Model.php on line 32.
+ 1 APPPATH\Models\Todos_Model.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: title', 'APPPATH\\Models\\Todos_Model.php', 32, [...])
+ 2 APPPATH\Controllers\Todolist.php(30): App\Models\Todos_Model->insertTodos([...])
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Todolist->insertTodos()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Todolist))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-07 20:01:45 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(title, description, is_done) SET (?, ?, ?) WHERE id = ?' at line 1
+CRITICAL - 2022-08-07 20:01:45 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(title, description, is_done) SET (?, ?, ?) WHERE id = ?' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE todos (title, description, is_done) SET (?, ?, ?) WHERE id = ?', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE todos (title, description, is_done) SET (?, ?, ?) WHERE id = ?')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE todos (title, description, is_done) SET (?, ?, ?) WHERE id = ?')
+ 4 APPPATH\Models\Todos_Model.php(40): CodeIgniter\Database\BaseConnection->query('UPDATE todos (title, description, is_done) SET (?, ?, ?) WHERE id = ?', [...])
+ 5 APPPATH\Controllers\Todolist.php(36): App\Models\Todos_Model->updateTodos([...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Todolist->updateTodos()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Todolist))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-07 20:02:52 --> Undefined index: id
+in APPPATH\Models\Todos_Model.php on line 40.
+ 1 APPPATH\Models\Todos_Model.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id', 'APPPATH\\Models\\Todos_Model.php', 40, [...])
+ 2 APPPATH\Controllers\Todolist.php(36): App\Models\Todos_Model->updateTodos([...])
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Todolist->updateTodos()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Todolist))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-07 20:04:20 --> Undefined index: title
+in APPPATH\Models\Todos_Model.php on line 41.
+ 1 APPPATH\Models\Todos_Model.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: title', 'APPPATH\\Models\\Todos_Model.php', 41, [...])
+ 2 APPPATH\Controllers\Todolist.php(36): App\Models\Todos_Model->updateTodos([...])
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Todolist->updateTodos()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Todolist))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-07 20:04:45 --> Undefined index: title
+in APPPATH\Models\Todos_Model.php on line 41.
+ 1 APPPATH\Models\Todos_Model.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: title', 'APPPATH\\Models\\Todos_Model.php', 41, [...])
+ 2 APPPATH\Controllers\Todolist.php(36): App\Models\Todos_Model->updateTodos([...])
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Todolist->updateTodos()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Todolist))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-07 20:05:35 --> Undefined index: title
+in APPPATH\Models\Todos_Model.php on line 41.
+ 1 APPPATH\Models\Todos_Model.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: title', 'APPPATH\\Models\\Todos_Model.php', 41, [...])
+ 2 APPPATH\Controllers\Todolist.php(36): App\Models\Todos_Model->updateTodos([...])
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Todolist->updateTodos()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Todolist))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-07 20:05:54 --> Undefined index: title
+in APPPATH\Models\Todos_Model.php on line 41.
+ 1 APPPATH\Models\Todos_Model.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: title', 'APPPATH\\Models\\Todos_Model.php', 41, [...])
+ 2 APPPATH\Controllers\Todolist.php(36): App\Models\Todos_Model->updateTodos([...])
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Todolist->updateTodos()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Todolist))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-07 20:06:51 --> Undefined index: is_done
+in APPPATH\Models\Todos_Model.php on line 41.
+ 1 APPPATH\Models\Todos_Model.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: is_done', 'APPPATH\\Models\\Todos_Model.php', 41, [...])
+ 2 APPPATH\Controllers\Todolist.php(36): App\Models\Todos_Model->updateTodos([...])
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Todolist->updateTodos()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Todolist))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-07 20:07:13 --> Undefined index: is_done
+in APPPATH\Models\Todos_Model.php on line 41.
+ 1 APPPATH\Models\Todos_Model.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: is_done', 'APPPATH\\Models\\Todos_Model.php', 41, [...])
+ 2 APPPATH\Controllers\Todolist.php(36): App\Models\Todos_Model->updateTodos([...])
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Todolist->updateTodos()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Todolist))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-07 20:10:46 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(is_done) SET ('2') WHERE id = '1'' at line 1
+CRITICAL - 2022-08-07 20:10:46 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(is_done) SET ('2') WHERE id = '1'' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE todos (is_done) SET (\'2\') WHERE id = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE todos (is_done) SET (\'2\') WHERE id = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE todos (is_done) SET (\'2\') WHERE id = \'1\'')
+ 4 APPPATH\Models\Todos_Model.php(42): CodeIgniter\Database\BaseConnection->query('UPDATE todos (is_done) SET (?) WHERE id = ?', [...])
+ 5 APPPATH\Controllers\Todolist.php(36): App\Models\Todos_Model->updateTodos([...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Todolist->updateTodos()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Todolist))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

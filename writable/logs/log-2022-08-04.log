@@ -1,0 +1,12 @@
+CRITICAL - 2022-08-04 21:13:13 --> Undefined variable: is_done
+in APPPATH\Views\index.php on line 54.
+ 1 APPPATH\Views\index.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: is_done', 'APPPATH\\Views\\index.php', 54, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Todolist.php(19): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Todolist->getTodos()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Todolist))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

@@ -1,0 +1,10 @@
+CRITICAL - 2022-08-08 01:34:29 --> syntax error, unexpected 'echo' (T_ECHO), expecting ';' or ','
+in APPPATH\Views\index.php on line 67.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('index', [], true)
+ 3 APPPATH\Controllers\Todolist.php(20): view('index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Todolist->getTodos()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Todolist))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
